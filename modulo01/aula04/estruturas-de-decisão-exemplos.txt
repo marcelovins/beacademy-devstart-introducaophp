@@ -1,0 +1,16 @@
+Exercício aula 04 (video 15)
+estruturas de decisão no privalia.com
+
+se (clickComprar == true) {
+adicionar produto ao carrinho
+}
+
+se (clienteLogado == false {
+direcionar cliente à página login
+}
+senão { direcionar á página de pagamentos }
+
+se (dadosPagamento == bancoDeDadosX) {
+print "Obrigado por sua compra"
+}
+senão { print "Confira seus dados" }

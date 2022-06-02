@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dados.php">
+    <title>Minha Tabela-Execício</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tabela Produtos</h1>
+    </header>
+    <table>
+        <tr>
+            <td>{$nome[0]}</td>
+            <td>{$idade[0]}</td>
+            <td>{$sexo[0]}</td>
+        </tr>
+        <tr>
+            <td>{$nome[1]}</td>
+            <td>{$idade[1]}</td>
+            <td>{$sexo[1]}</td>
+        </tr>
+        <tr>
+            <td>{$nome}</td>
+            <td>{$idade}</td>
+            <td>{$sexo}</td>
+        </tr>
+    </table>
+  
+</body>
+</html>
+
+<?php
+
+$nome = ['marcelo', 'joao', 'ricardo'];
+$idade = ['23', '34', '35'];
+$sexo = ['masculino', 'feminino'];
+
+echo "{$nome[2]}<br>";
+
+echo "{$nome[1]}<br>";
+
+echo "{$nome[0]}<br>";
+
+?>
