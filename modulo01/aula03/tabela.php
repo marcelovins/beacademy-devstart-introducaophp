@@ -21,15 +21,16 @@ $banda = [
 $i = 0;
 $j = 0;
 
-echo '<table class="table table-hover table-dark">';
+echo '<table class="table table-sm">';
 
 echo "<thead>
 
         <th>BANDA</th>
-        <th>                       QTD MÚSICAS</th>
+        <th>QTD MÚSICAS</th>
         
         
         </thead>";
+
 foreach ($banda as $cadaBanda) {
 
     echo "<tr>

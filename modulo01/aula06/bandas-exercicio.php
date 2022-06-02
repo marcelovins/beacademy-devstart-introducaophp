@@ -1,26 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+
 <?php
+
 
 $banda = [
     ['Journey', 5],
-    ['AlterBridge', 22],
+    ['AlterBridge', 6],
     ['WhiteSnake', 2],
-    ['Europe', 5],
-    ['IronMaiden', 2]
+    ['Europe', 2],
+    ['IronMaiden', 6]
 ];
 
-$n = 0;
 $i = 0;
+$j = 0;
 
-echo '<table>';
+echo '<table class="table table-sm">';
 
+echo "<thead>
 
-foreach ($banda as $cadaBanda[$n][$i]) {
+        <th>BANDA</th>
+        <th>QTD MÚSICAS</th>
+        
+        
+        </thead>";
 
-    echo "<tr>{$cadaBanda[$n][$i]}</tr>";
-    $n++;
-    $i++;
+foreach ($banda as $cadaBanda) {
+
+    echo "<tr>
+    <td>{$cadaBanda[0]}<td>
+    <td>{$cadaBanda[1]}<td>
+    
+    </tr>";
 }
 
-
-
-'</table>';
